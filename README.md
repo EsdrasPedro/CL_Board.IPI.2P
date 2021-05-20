@@ -2,6 +2,7 @@
 Serviço de organização de chamadas por vídeo para instituições de ensino, empresas e outros grupos. O CL Board foi projetado tendo como base o Google Classroom e o Kanban, contendo características de ambos visando facilidade e informação.
 
 
+
 ## Funcionalidades
 
 * Cadastramento de usuários
@@ -13,12 +14,14 @@ Serviço de organização de chamadas por vídeo para instituições de ensino, 
 * Envio de informações via WhatsApp
 
 
+
 ## Tecnologias
 
 * HTML 5
 * CSS
 * PHP
 * JavaScript
+
 
 
 ## Desenvolvedores
