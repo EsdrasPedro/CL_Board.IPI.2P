@@ -1,5 +1,5 @@
 # CL Board
-Serviço de organização de chamadas por vídeo para instituições de ensino, empresas e outros grupos. O CL Board foi projetado tendo como base o Google Classroom e o Kanban, contendo características de ambos visando facilidade e informação.
+Serviço de organização de reuniões por vídeo para instituições de ensino, empresas e outros grupos. O CL Board foi projetado tendo como base o Google Classroom e o Kanban, contendo características de ambos, visando facilidade e informação.
 
 
 
