@@ -29,7 +29,7 @@ Serviço de organização de chamadas por vídeo para instituições de ensino, 
 * [Esdras Silva](https://github.com/EsdrasPedro)
 * [Gleydson José](https://github.com/Gjss333)
 * [Ingrid Sthefanny](https://github.com/Ingrid-st)
-* [Taynan Beatriz]()
+* [Taynan Beatriz](https://github.com/Taynan-Beatriz)
 * [Carlos Rodrigo]()
 * [Renne Andrade]()
 * [Pedro Henrique](https://github.com/Pedro-HenriqueWO)
