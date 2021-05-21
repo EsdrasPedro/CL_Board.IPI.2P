@@ -31,5 +31,5 @@ Serviço de organização de reuniões por vídeo para instituições de ensino,
 * [Ingrid Sthefanny](https://github.com/Ingrid-st)
 * [Taynan Beatriz](https://github.com/Taynan-Beatriz)
 * [Carlos Rodrigo]()
-* [Renne Andrade]()
+* [Renne Andrade](https://github.com/RenneAndrade300)
 * [Pedro Henrique](https://github.com/Pedro-HenriqueWO)
