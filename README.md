@@ -33,4 +33,3 @@ Serviço de organização de reuniões por vídeo para instituições de ensino,
 * [Taynan Beatriz](https://github.com/Taynan-Beatriz)
 * [Carlos Rodrigo](https://github.com/crodrigomf/)
 * [Renne Andrade](https://github.com/RenneAndrade300)
-* [Pedro Henrique](https://github.com/Pedro-HenriqueWO)
