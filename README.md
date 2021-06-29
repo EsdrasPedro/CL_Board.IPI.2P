@@ -18,7 +18,7 @@ Serviço de organização de reuniões por vídeo para instituições de ensino,
 ## Tecnologias
 
 * HTML 5
-* CSS
+* CSS 3
 * PHP
 * JavaScript
 
