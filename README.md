@@ -29,7 +29,4 @@ Serviço de organização de reuniões por vídeo para instituições de ensino,
 * [Esdras Silva](https://github.com/EsdrasPedro)
 * [Gleydson José](https://github.com/Gjss333)
 * [Ingrid Sthefanny](https://github.com/Ingrid-st)
-* [Luis Henrique](https://github.com/lhssluis)
-* [Taynan Beatriz](https://github.com/Taynan-Beatriz)
 * [Carlos Rodrigo](https://github.com/crodrigomf/)
-* [Renne Andrade](https://github.com/RenneAndrade300)
