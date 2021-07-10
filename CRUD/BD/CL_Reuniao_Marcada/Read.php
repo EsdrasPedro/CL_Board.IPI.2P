@@ -29,11 +29,10 @@
  	<h1>Lista de reunião</h1>
  	<table>
  		<tr>
- 			<th>ID</th>
+            <th></th>
  			<th>NOME</th>
  			<th>DATA_H_INICIO</th>
  			<th>DATA_H_FIM</th>
- 			<th>DIO_ID</th>
  		</tr>
  		<?php foreach ($data as $row ): ?>
 
@@ -43,13 +42,13 @@
  				<td><?= $row[1] ?></td>
                 <td><?= $row[2] ?></td>
                 <td><?= $row[3] ?></td>
-                <td><?= $row[4] ?></td>
+
  				<td> 
                     <a href="delete.php?ID=<?= $row[0] ?>">Remover</a> 
                 </td>
  			</tr>
  		<?php endforeach ?>
  	</table>
-    <a href="create.html"><h3>Adicionar</h3></a>
+    <a href="CL_reuniao_marcada.html"><h3>Adicionar</h3></a>
  </body>
  </html>

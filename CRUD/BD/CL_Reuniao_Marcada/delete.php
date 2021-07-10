@@ -6,5 +6,5 @@
     $det = $pdo->prepare("delete from cl_reuniao_marcada where ID = ?");
     $det->execute( [$ID] );
 
-    header('Location: index.php');
+    header('Location: Read.php');
 ?>

@@ -1,19 +1,16 @@
-<?php
+<?php 
+include 'connect.php';
 
- include 'connect.php';
- 
- $Id = $_POST['f_Id'];
- $name = $_POST['f_Disciplina'];
- $DateTime_Inicio = $_POST['f_HoraInicial'];
- $DateTime_Fim = $_POST['f_HoraFinal'];
- $Id_DIO = $_POST['f_ID_DIO'];
+
+$Name = $_POST['NameMateria'];
+$D_Inicio = $_POST['Date_Ini'];
+$D_Fim = $_POST['Date_Fim'];
 
 $pdo = new PDO ('mysql:host=localhost;dbname=cl_board;port=3306', 'root', 'daniel333');
+$stmt = $pdo->prepare("INSERT INTO cl_reuniao_marcada (NOME, DATA_H_INICIO, DATA_H_FIM) VALUES (?,?,?) ");
+$stmt->execute ([$Name, $D_Inicio, $D_Fim,]);
 
-$stmt = $pdo->prepare("INSERT INTO cl_reuniao_marcada (ID, NOME, DATA_H_INICIO, DATA_H_FIM, DIO_ID) VALUES (?,?,?,?,?) ");
-$stmt->execute ([$Id, $name, $DateTime_Inicio, $DateTime_Fim, $Id_DIO]);
+header('Location: Cl_reuniao_marcada.html');
 
-
-header('Location: create.html');
 
 ?>
