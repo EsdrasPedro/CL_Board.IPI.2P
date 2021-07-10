@@ -10,6 +10,6 @@
 
     fwrite($fp, $data);
 
-    header('Location: CL_dsciplina_ofertada.html');
+    header('Location: CL_disciplina_ofertada.html');
 
 ?>
