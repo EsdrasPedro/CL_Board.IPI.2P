@@ -1,9 +1,8 @@
-<?php 
-
-    include 'Connection4.php';
+<?php
+    include 'Connect.php';
+    
     $stmt = $pdo->query('SELECT * FROM cl_disciplina_ofertada');
-    $date = $stmt->fetchAll();
-
+    $data = $stmt->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -23,27 +22,27 @@
   } 
   </style>
 </head>
+
 <body>
   <h1>Diciplina Ofertada</h1>
   <table>
-    <tr>
-        <th>ID</th>
-        <th>ANO</th>
-        <th>SEMESTRE</th>
-        <th>COR</th>
-    </tr>
-    <?php foreach($date as $row): ?>
+        <tr>
+            <th>ID</th>
+            <th>ANO</th>
+            <th>SEMESTRE</th>
+            <th>COR</th>
+        </tr>
+    <?php foreach($data as $row): ?>
         <tr>
             <td><?= $row[0] ?></td>
             <td><?= $row[1] ?></td>
             <td><?= $row[2] ?></td>
             <td><?= $row[3] ?></td>
             <td>
-            <a href="delete4.php?ID=<?= $row[0] ?>">Deletar</a>
+                <a href="Remove.php?ID=<?= $row[0] ?>">Remover</a>
             </td>
         </tr>
     <?php endforeach ?>
   </table>
 </body>
 </html>
-
