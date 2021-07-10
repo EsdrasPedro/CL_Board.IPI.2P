@@ -3,7 +3,7 @@
     $index = $_GET['line'];
 
     unset($rows[$index]);
-    
+
     $new_data = implode('', $rows);
 
     file_put_contents('BD4.CSV', $new_data);
