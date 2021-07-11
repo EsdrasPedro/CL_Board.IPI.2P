@@ -22,6 +22,12 @@
             font-size: 3.5rem;
           }
         }
+        .small{
+          font-size:80%;
+        }
+        a, a:hover {
+          text-decoration: none;
+        }
     </style>
   </head>
   <body class="text-center">
@@ -42,16 +48,18 @@
       <label class="form-label" for="floatingPassword">Senha</label>
     </div>
 
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Lembre de mim
-      </label>
+    <div class="mb-3 text-right">
+      <a href="#" class="small">Esqueceu a senha?</a>
     </div>
 
     <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; CL Board</p>
+    <div class="text-center mt-3 small">
+      Não tem uma conta? <a href="register.html">Inscreva-se</a>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small small">
+      <p class="mb-1">&copy; 2021 CL Board</p>
     </footer>
     
   </form>
