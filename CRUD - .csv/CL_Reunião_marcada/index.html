@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+                
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: #112840;
+        }
+        
+        form{
+           
+            max-height: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+            text-shadow: 1px  2px black;
+        }
+
+        form input[type=text],
+        form input[type=submit]{
+            width: 50%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 5px 0;
+            
+        }
+
+        form input[type=date]{
+
+            width: 17%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 5px 0;
+
+        }
+
+        form input[type=time]{
+            width: 9%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 5px 0;
+
+        }
+
+        form input[type=submit]{
+            width: 50%;
+            height: 40px;
+            cursor: pointer;
+            background: #2F7C9A;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            transition: 1s;
+        }
+
+        form input[type=submit]:hover{
+            background-color: #4A5F6A;
+        }
+
+        
+
+    </style>
+    <title>ClBOARD-REUNIAO-MARCADA</title>
+</head>
+<body>
+
+    <div class="main">
+        <form name="f_cadastro" action="date.php" method="POST">
+            
+                
+                    
+                <legend><h3>Reunião Marcada</h3></legend>
+
+                <div class="boxline1">
+                    
+                    <input type="text" name="f_Disciplina" placeholder="Nome da matéria">
+                    
+                </div>
+
+                <div class="boxline2">
+                    
+                    <input type="time" name="f_HoraInicial">
+                    <label><b>Horário Inicial</b></label>
+                    
+                </div>
+
+                 <div class="boxline3">
+                    
+                    <input type="time" name="f_HoraFinal" >
+                     <label><b>Horário Final</b></label>
+                    
+                </div>
+
+                <div class="boxdate">
+                    
+                    <input type="date" name="f_DataEncontro">
+                    <label><b>Data da Reunião</b></label>
+                </div>
+
+                <div>
+                    
+                    <input type="submit" name="Enviar"> 
+
+                </div>
+                
+           
+        </form>
+    </div>
+
+</body>
+</html>
