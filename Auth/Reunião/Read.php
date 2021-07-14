@@ -2,7 +2,7 @@
 
     include 'connect.php';
 
-	$stmt = $pdo->query('SELECT * FROM cl_reunião_marcada');
+	$stmt = $pdo->query('SELECT * FROM CL_REUNIÃO_MARCADA');
 	$data = $stmt->fetchAll();
  ?>
 

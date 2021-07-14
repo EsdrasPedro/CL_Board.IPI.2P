@@ -1,7 +1,7 @@
 <?php
     include 'Connect.php';
     
-    $stmt = $pdo->query('SELECT * FROM cl_disciplina');
+    $stmt = $pdo->query('SELECT * FROM CL_DISCIPLINA');
     $data = $stmt->fetchAll();
 ?>
 

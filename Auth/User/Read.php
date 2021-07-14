@@ -1,7 +1,7 @@
 <?php
     include 'Connect.php';
     
-    $stmt = $pdo->query('SELECT * FROM cl_usuario');
+    $stmt = $pdo->query('SELECT * FROM CL_USUARIO');
     $data = $stmt->fetchAll();
 ?>
 

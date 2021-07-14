@@ -3,7 +3,7 @@
 
     $ID = $_GET['ID'];
 
-    $det = $pdo->prepare("delete from cl_disciplina_ofertada where ID = ?");
+    $det = $pdo->prepare("delete from CL_DISCIPLINA_OFERTADA where ID = ?");
     $det->execute( [$ID] );
 
     header('Location: Read.php');

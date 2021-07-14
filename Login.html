@@ -1,3 +1,5 @@
+<?php include 'Connect.php' ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,7 +36,7 @@
 
 <main class="form-signin">
   
-  <form>
+  <form action="./Auth/Login/auth.php" method="POST">
     <h1 class="h3 mb-3 fw-normal">Login</h1>
 
     <div class="form-floating">
@@ -43,7 +45,7 @@
     </div>
 
     <div class="form-floating">
-      <input type="password" class="form-control" name="password1" placeholder="Senha" required>
+      <input type="password" class="form-control" name="pw" placeholder="Senha" required>
       <label class="form-label" for="floatingPassword">Senha</label>
     </div>
 
