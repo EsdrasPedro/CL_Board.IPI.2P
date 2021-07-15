@@ -1,11 +1,9 @@
-<?php 
-
-    include 'connect.php';
-
-	$stmt = $pdo->query('SELECT * FROM CL_REUNIÃO_MARCADA');
-	$data = $stmt->fetchAll();
- ?>
-
+<?php
+    include '../init/Connect.php';
+    
+    $stmt = $pdo->query('SELECT * FROM CL_REUNIÃO_MARCADA');
+    $data = $stmt->fetchAll();
+?>
 
  <!DOCTYPE html>
  <html lang="pt-br">

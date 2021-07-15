@@ -1,5 +1,5 @@
 <?php
-    include 'Connect.php';
+    include '../init/Connect.php';
 
     $nome1 = $_POST['fName'];
     $nome2 = $_POST['lName'];

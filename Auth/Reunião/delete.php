@@ -1,5 +1,5 @@
 <?php
-    include 'connect.php';
+    include '../init/Connect.php';
 
     $ID = $_GET['ID'];
 
