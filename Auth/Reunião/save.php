@@ -1,5 +1,6 @@
 <?php 
-    include '';
+
+    include 'Connect.php';
 
     $Name = $_POST['NameMateria'];
     $D_Inicio = $_POST['Date_Ini'];
