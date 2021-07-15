@@ -1,5 +1,5 @@
 <?php
-    include '../init/Connect.php';
+    include '../Connect.php';
     
     $stmt = $pdo->query('SELECT * FROM CL_USUARIO');
     $data = $stmt->fetchAll();

@@ -1,5 +1,5 @@
 <?php
-    include '../init/Connect.php';
+    include '../Connect.php';
 
     $ano = $_POST['country1']; 
     $semestre = $_POST['country2'];  

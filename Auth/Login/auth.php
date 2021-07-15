@@ -1,6 +1,6 @@
 <?php
-
-    include '../init/Connect.php';
+    
+    include '../Connect.php';
 
     $us = $_POST['email'];
     $pw = $_POST['pw'];
