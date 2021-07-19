@@ -12,7 +12,6 @@
 
     if (sizeof($data) == 0) {
 
-        header('location: Login.html?msg=Login ou senha incorreto');
         exit();
 
     }
