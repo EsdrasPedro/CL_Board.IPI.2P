@@ -20,5 +20,5 @@
     $stmt = $pdo->prepare("INSERT INTO CL_USUARIO (NOME, SOBRENOME, DATA_DE_NASCIMENTO, GENERO, N_CELULAR, TIPO_USUARIO, MATRICULA, E_MAIL, SENHA) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->execute([$nome1, $nome2, $nascer, $genero, $celular, $tipe1, $matricula, $email, $senha]);
 
-    header('Location: /Login.html');
+    header('Location: /Login.php');
 ?>

@@ -3,12 +3,11 @@
     include './Auth/Connect.php';
 
     if (!is_logged()) {
-        header('location: Login.html');
+        header('location: Login.php');
         exit();
     }
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="./Assets/Css/chartist.css">
     <link rel="stylesheet" href="./Assets/Css/chartist-plugin-tooltip.css">
     <link rel="stylesheet" href="./Assets/Css/graindashboard.css">
-    <title>Home</title>
+    <title>Agenda</title>
 </head>
 <body class="has-sidebar has-fixed-sidebar-and-header">
 
@@ -166,7 +165,7 @@
             </li>
 
             <li class="side-nav-menu-item side-nav-has-menu">
-                <a class="side-nav-menu-link media align-items-center" href="./Home.html">
+                <a class="side-nav-menu-link media align-items-center" href="Home.php">
               <span class="side-nav-menu-icon d-flex mr-3">
                 <i class="gd-home"></i>
               </span>
@@ -175,7 +174,7 @@
             </li>
 
             <li class="side-nav-menu-item side-nav-has-menu">
-                <a class="side-nav-menu-link media align-items-center" href="index.html">
+                <a class="side-nav-menu-link media align-items-center" href="index.php">
               <span class="side-nav-menu-icon d-flex mr-3">
                 <i class="gd-calendar"></i>
               </span>

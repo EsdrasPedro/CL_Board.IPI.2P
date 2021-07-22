@@ -11,7 +11,7 @@
     $data = $stmt->fetchAll();
 
     if (sizeof($data) == 0) {
-
+        header('location: /index.php');
         exit();
 
     }
@@ -20,6 +20,6 @@
     $_SESSION['CL_USUARIO_ID'] = $cl_usuario['ID'];
     $_SESSION['E_MAIL'] = $cl_usuario['E_MAIL'];
 
-    header('location: /index.html');
+    header('location: /index.php');
 
 ?>

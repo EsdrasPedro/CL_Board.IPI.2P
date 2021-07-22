@@ -8,5 +8,5 @@
     $stmt = $pdo->prepare("INSERT INTO CL_DISCIPLINA_OFERTADA (ANO, SEMESTRE, COR_DISC) VALUES (?, ?, ?)");
     $stmt->execute([$ano, $semestre, $cor]);
 
-    header('Location: /index.html');
+    header('Location: /index.php');
 ?>
