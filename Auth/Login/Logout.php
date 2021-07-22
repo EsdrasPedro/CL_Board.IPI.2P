@@ -2,6 +2,6 @@
     include '../Connect.php';
 
     session_destroy();
-    headder('location: /Login.html');
+    header('location: /Login.html');
 
 ?>
