@@ -192,7 +192,7 @@
         <div class="py-4 px-3 px-md-4">
 
             <div class="mb-3 mb-md-4 d-flex justify-content-between">
-                <div class="h3 mb-0">Olá, <?= NOME() ?> ESSA PORRA NÃO IMPRIME NADA SÓ O ID E E_MAIL</div>
+                <div class="h3 mb-0 cc">Olá, <?= user() ?></div>
             </div>
 
             <div class="row">

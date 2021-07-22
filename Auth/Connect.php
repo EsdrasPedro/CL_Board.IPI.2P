@@ -11,7 +11,7 @@
         return false;
     }
 
-    function NOME() {
+    function user() {
         return $_SESSION['NOME'] ?? false;
     }
 ?>

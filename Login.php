@@ -1,3 +1,9 @@
+<?php
+
+  include './Auth/Connect.php';
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
