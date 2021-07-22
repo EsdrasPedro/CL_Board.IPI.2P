@@ -11,6 +11,7 @@
     $data = $stmt->fetchAll();
 
     if (sizeof($data) == 0) {
+        
         header('location: /index.php');
         exit();
 
