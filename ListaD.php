@@ -2,12 +2,12 @@
     include './Auth/Connect.php';
 
     if (!is_logged()) {
-      header('location: Login.php');
-      exit();
+        header('location: Login.php');
+        exit();
     }
     
-    $stmt = $pdo->query('SELECT * FROM CL_CURSO');
-    $cursos = $stmt->fetchAll();
+    $stmt = $pdo->query('SELECT * FROM CL_DISCIPLINA');
+    $discs = $stmt->fetchAll();
 
 ?>
 
@@ -64,13 +64,13 @@
     <div class="row">
       <div class="col-lg-5 mx-auto">
         <div class="bg-white rounded-lg shadow-sm p-5">
-            <h4 class="mb-3 cc">Lista de Cursos</h4>
+            <h4 class="mb-3 cc">Lista de Disciplinas</h4>
 
           <div class="tab-content">
             <div class="tab-pane fade show active">
               
-                <?php foreach($cursos as $curso): ?>
-                  <p class="cc"><?=  $curso['DESC_CURSO']  ?> - <a href="./Auth/Curso/delete.php?ID=<?= $curso['ID'] ?>">Remover</a> </p>
+                <?php foreach($discs as $disc): ?>
+                  <p class="cc"><?=  $disc['NOME']  ?> - <a href="./Auth/Disciplina/delete.php?ID=<?= $disc['ID'] ?>">Remover</a> </p>
                 <?php endforeach ?>
               
             </div>
