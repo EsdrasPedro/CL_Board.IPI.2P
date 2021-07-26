@@ -152,10 +152,10 @@
 
                 <ul id="subPages" class="side-nav-menu side-nav-menu-second-level mb-0">
                     <li class="side-nav-menu-item">
-                        <a class="side-nav-menu-link" href="CL_curso.html">Cadastrar Curso</a>
+                        <a class="side-nav-menu-link" href="Pré_C.html">Curso</a>
                     </li>
                     <li class="side-nav-menu-item">
-                        <a class="side-nav-menu-link" href="CL_disciplina.html">Cadastrar Disciplina</a>
+                        <a class="side-nav-menu-link" href="Pré_D.html">Disciplina</a>
                     </li>
                     <li class="side-nav-menu-item">
                         <a class="side-nav-menu-link" href="CL_reuniao_marcada.html">Marcar Reunião</a>
