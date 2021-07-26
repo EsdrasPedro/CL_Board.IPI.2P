@@ -153,7 +153,7 @@
 
                 <ul id="subPages" class="side-nav-menu side-nav-menu-second-level mb-0">
                     <li class="side-nav-menu-item">
-                        <a class="side-nav-menu-link" href="#">Cadastrar Curso</a>
+                        <a class="side-nav-menu-link" href="CL_curso.html">Cadastrar Curso</a>
                     </li>
                     <li class="side-nav-menu-item">
                         <a class="side-nav-menu-link" href="CL_disciplina.html">Cadastrar Disciplina</a>
