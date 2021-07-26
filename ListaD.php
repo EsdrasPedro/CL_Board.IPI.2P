@@ -2,8 +2,8 @@
     include './Auth/Connect.php';
 
     if (!is_logged()) {
-        header('location: Login.php');
-        exit();
+      header('location: Login.php');
+      exit();
     }
     
     $stmt = $pdo->query('SELECT * FROM CL_DISCIPLINA');
@@ -22,6 +22,7 @@
     <link href="/Assets/Css/cover.css" rel="stylesheet">
     <link href="/Assets/Css/chartist.css" rel="stylesheet">
     <link href="/Assets/Css/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="/Assets/Css/gd.css" rel="stylesheet">
     <title>CL Board</title>
 
     <style>
@@ -41,7 +42,6 @@
         body {
             background: #f5f5f5;
         }
-
         .rounded-lg {
             border-radius: 1rem;
         }
@@ -67,12 +67,27 @@
             <h4 class="mb-3 cc">Lista de Disciplinas</h4>
 
           <div class="tab-content">
+            <div class="row">
+
             <div class="tab-pane fade show active">
               
-                <?php foreach($discs as $disc): ?>
-                  <p class="cc"><?=  $disc['NOME']  ?> - <a href="./Auth/Disciplina/delete.php?ID=<?= $disc['ID'] ?>">Remover</a> </p>
-                <?php endforeach ?>
-              
+              <?php foreach($discs as $disc): ?>
+                <p class="cc align-items-center d-flex unfold-item"><?=  $disc['NOME']  ?> - 
+
+                  <a class="unfold-link align-items-center text-nowrap" href="./Auth/Disciplina/delete.php?ID=<?= $disc['ID'] ?>">
+                    <span class="unfold-item-icon mr-3">
+                      <i class="gd-close"></i>
+                    </span>
+                  </a> 
+
+                </p>
+              <?php endforeach ?>
+            
+          </div>
+          <div>
+            
+          </div>
+
             </div>
           </div>
   

@@ -22,6 +22,7 @@
     <link href="/Assets/Css/cover.css" rel="stylesheet">
     <link href="/Assets/Css/chartist.css" rel="stylesheet">
     <link href="/Assets/Css/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="/Assets/Css/gd.css" rel="stylesheet">
     <title>CL Board</title>
 
     <style>
@@ -51,6 +52,7 @@
         .cd{
           color:grey
         }
+        
     </style>
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark"> 
@@ -67,12 +69,24 @@
             <h4 class="mb-3 cc">Lista de Cursos</h4>
 
           <div class="tab-content">
+            <div class="row">
+
             <div class="tab-pane fade show active">
+
               
                 <?php foreach($cursos as $curso): ?>
-                  <p class="cc"><?=  $curso['DESC_CURSO']  ?> - <a href="./Auth/Curso/delete.php?ID=<?= $curso['ID'] ?>">Remover</a> </p>
+                  <p class="cc align-items-center d-flex unfold-item"><?=  $curso['DESC_CURSO']  ?> -
+                  
+                  <a class="unfold-link align-items-center text-nowrap" href="./Auth/Curso/delete.php?ID=<?= $curso['ID'] ?>">
+                  <span class="unfold-item-icon">
+                        <i class="gd-close"></i>
+                    </span></a>
+                  
+                  </p>
                 <?php endforeach ?>
+                  
               
+            </div>
             </div>
           </div>
   
