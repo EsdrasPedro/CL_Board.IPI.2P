@@ -52,6 +52,30 @@
         .cd{
           color:grey
         }
+        .task-delete {
+          margin-left: 90%;
+          display: flex;
+        }
+        .task-item {
+          padding: 12px 20px;
+        }
+        .task-input {
+          flex: 1;
+          font-size: 16px;
+          font-family: var(--font);
+          padding: 10px 20px;
+          border: 0;
+          box-shadow: 0 -1px 0 #e2e4ea inset;
+          color: #455963;
+        }
+        .task-item + .task-item {
+          border-top: 1px solid #eef0f5;
+        }
+        .task-list {
+          max-height: 30vh;
+          overflow: auto;
+        }
+        
         
     </style>
   </head>
@@ -59,25 +83,27 @@
 <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
   <header class="mb-auto">
-    <div>
-    </div>
   </header>
 
     <div class="row">
       <div class="col-lg-5 mx-auto">
         <div class="bg-white rounded-lg shadow-sm p-5">
+
+          <div class="task-input">
             <h4 class="mb-3 cc">Lista de Cursos</h4>
+          </div>
+            
 
           <div class="tab-content">
             <div class="row">
 
-            <div class="tab-pane fade show active">
+            <div class="tab-pane fade show active task-list">
 
               
                 <?php foreach($cursos as $curso): ?>
-                  <p class="cc align-items-center d-flex unfold-item"><?=  $curso['DESC_CURSO']  ?> -
+                  <p class="cc align-items-center d-flex unfold-item task-item"><?=  $curso['DESC_CURSO']  ?> 
                   
-                  <a class="unfold-link align-items-center text-nowrap" href="./Auth/Curso/delete.php?ID=<?= $curso['ID'] ?>">
+                  <a class="unfold-link align-items-center text-nowrap task-delete" href="./Auth/Curso/delete.php?ID=<?= $curso['ID'] ?>">
                   <span class="unfold-item-icon">
                         <i class="gd-close"></i>
                     </span></a>
@@ -94,8 +120,6 @@
       </div>
     </div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-  </footer>
   <footer class="my-5 pt-5 text-muted text-center text-small">
   </footer>
 </div>
