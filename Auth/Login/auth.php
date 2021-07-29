@@ -20,6 +20,7 @@
     $cl_usuario = $data[0];
     $_SESSION['CL_USUARIO_ID'] = $cl_usuario['ID'];
     $_SESSION['E_MAIL'] = $cl_usuario['E_MAIL'];
+    $_SESSION['NOME'] = $cl_usuario['NOME'];
 
     header('location: /index.php');
 
