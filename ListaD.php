@@ -52,7 +52,6 @@
           color:grey
         }
         .task-delete {
-          margin-left: 55%;
           display: flex;
         }
         .task-item {
@@ -98,7 +97,7 @@
             <div class="tab-pane fade show active task-list">
               
               <?php foreach($discs as $disc): ?>
-                <p class="cc align-items-center d-flex unfold-item task-item"><?=  $disc['NOME']  ?> 
+                <p class="cc justify-content-between align-items-center d-flex unfold-item task-item"><?=  $disc['NOME']  ?> 
 
                   <a class="unfold-link align-items-center text-nowrap task-delete" href="./Auth/Disciplina/delete.php?ID=<?= $disc['ID'] ?>">
                     <span class="unfold-item-icon">
