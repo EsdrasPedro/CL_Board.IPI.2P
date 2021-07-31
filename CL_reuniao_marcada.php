@@ -7,6 +7,8 @@
         exit();
     }
 
+    $stmt = $pdo->query('SELECT * FROM CL_DISCIPLINA');
+    $data = $stmt->fetchAll();
 ?>
 
 <!doctype html>
@@ -67,7 +69,7 @@
             <div class="tab-pane fade show active">
               <form class="needs-validation" role="form" action="./Auth/Reunião/save.php" method="POST" novalidate>
                 <div class="form-group">
-                  <label class="form-label cc">Nome da Disciplina</label>
+                  <label class="form-label cc">Nome</label>
                   <input type="text" name="NameMateria" class="form-control" required>
                 </div>
                 <div class="row">
@@ -80,6 +82,21 @@
                     <input type="datetime-local" name="Date_Fim" class="form-control" required>  
                 </div>
                 </div>
+
+                  <label class="form-label cc">Selecionar Disciplinas</label>
+                  
+                  <select class="form-select"  name="select_disciplina" required>
+                    
+                    <option selected disabled value="">Disciplinas</option>                    
+                    
+                    <?php foreach ($data as $row ): ?>                    
+                    
+                    <option value="<?= $row["ID"] ?>"><?= $row["NOME"] ?></option>
+                    
+                    <?php endforeach ?>
+
+                  </select>
+
                 <br>
                 <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100">Confirmar</button>
               </form>
