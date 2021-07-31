@@ -60,7 +60,7 @@
     <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
 
     <div class="text-center mt-3 small">
-      Não tem uma conta? <a href="CL_usuário.html">Cadastre-se</a>
+      Não tem uma conta? <a href="CL_usuário.php">Cadastre-se</a>
     </div>
 
     <footer class="my-5 pt-5 text-muted text-center text-small small">
