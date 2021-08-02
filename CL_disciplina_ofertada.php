@@ -19,7 +19,7 @@
     <meta name="author" content="Grupo CL Board">
     <link href="./Assets/Css/bootstrap.min.css" rel="stylesheet">
     <link href="./Assets/Css/cover.css" rel="stylesheet">
-    <title>CL Board</title>
+    <title>Agenda</title>
 
     <style>
         .bd-placeholder-img {
@@ -68,7 +68,7 @@
               <form class="needs-validation" role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
 
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 form-group">
                    <label class="col-form-label cc">Ano</label>
                     <select class="form-select" name="country1" required>
                       <option selected disabled value="">Escolher...</option>
@@ -84,7 +84,7 @@
                     <div class="invalid-feedback">Por favor, selecione algo válido.</div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-6 form-group">
                     <label class="col-form-label cc">Semestre</label>
                     <select class="form-select" name="country2" required>
                       <option selected disabled value="">Escolher...</option>
@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 form-group">
                   <label class="col-form-label cc">Cor</label>
                   <input type="color" class="form-control form-control-color" name="country3" list="arcoIris" value="#FF0000" required>
                   <datalist name="country3" required>
@@ -112,7 +112,6 @@
                   <div class="invalid-feedback">Por favor, selecione uma cor.</div>
                 </div>
               </div>
-
                 <br>
                 <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100">Confirmar</button>
               </form>
