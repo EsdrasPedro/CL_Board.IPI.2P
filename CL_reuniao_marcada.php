@@ -68,35 +68,37 @@
           <div class="tab-content">
             <div class="tab-pane fade show active">
               <form class="needs-validation" role="form" action="./Auth/Reunião/save.php" method="POST" novalidate>
-                <div class="form-group">
-                  <label class="form-label cc">Nome</label>
-                  <input type="text" name="NameMateria" class="form-control" required>
-                </div>
+
                 <div class="row">
-                  <div class="col-md-6">
-                      <label class="form-label cc">Horário de Início</label>
+                  <div class="col-md-12 form-group">
+                    <label class="col-form-label cc">Nome</label>
+                    <input type="text" name="NameMateria" class="form-control" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                      <label class="col-form-label cc">Horário de Início</label>
                       <input type="datetime-local" name="Date_Ini" class="form-control" required>  
                   </div>
-                  <div class="col-md-6">
-                    <label class="form-label cc">Horário de Término</label>
+                  <div class="col-md-6 form-group">
+                    <label class="col-form-label cc">Horário de Término</label>
                     <input type="datetime-local" name="Date_Fim" class="form-control" required>  
-                </div>
+                  </div>
                 </div>
 
-                  <label class="form-label cc">Selecionar Disciplinas</label>
-                  
-                  <select class="form-select"  name="select_disciplina" required>
-                    
-                    <option selected disabled value="">Disciplinas</option>                    
-                    
-                    <?php foreach ($data as $row ): ?>                    
-                    
-                    <option value="<?= $row["ID"] ?>"><?= $row["NOME"] ?></option>
-                    
+                <div class="col-md-12 form-group">
+                  <label class="col-form-label cc">Selecionar Disciplina</label>
+                  <select class="form-select" name="select_disciplina" required>
+                    <option selected disabled value="">Escolher...</option>  
+
+                    <?php foreach ($data as $row ): ?>
+                      <option value=" <?= $row["ID"] ?>" > <?= $row["NOME"] ?> </option>
                     <?php endforeach ?>
-
+                    
                   </select>
-
+                </div>
+                
                 <br>
                 <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100">Confirmar</button>
               </form>
