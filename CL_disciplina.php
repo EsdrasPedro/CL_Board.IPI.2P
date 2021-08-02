@@ -3,12 +3,14 @@
     include './Auth/Connect.php';
 
     if (!is_logged()) {
-        header('location: Login.php');
-        exit();
+      header('location: Login.php');
+      exit();
     }
+    
+    $stmt = $pdo->query('SELECT * FROM CL_CURSO');
+    $cursos = $stmt->fetchAll();
 
 ?>
-
 
 <!doctype html>
 <html lang="en" class="h-100">
@@ -19,7 +21,7 @@
     <meta name="author" content="Grupo CL Board">
     <link href="./Assets/Css/bootstrap.min.css" rel="stylesheet">
     <link href="./Assets/Css/cover.css" rel="stylesheet">
-    <title>CL Board</title>
+    <title>Agenda</title>
 
     <style>
         .bd-placeholder-img {
@@ -70,16 +72,29 @@
                 <div class="row">
                     <div class="col-md-12 form-group">
                         <label class="col-form-label cc">Nome</label>
-                        <input type="text" class="form-control" name="DitName" placeholder="Nome" required>
+                        <input type="text" class="form-control" name="DitName" required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12 form-group">
-                        <label class="col-form-label cc ">Código</label>
-                   
-                        <input type="text" class="form-control" name="codig" placeholder="codigo" required>
+                        <label class="col-form-label cc">Código</label>
+                        <input type="text" class="form-control" name="codig" required>
                     </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label class="col-form-label cc">Selecionar Curso</label>
+                    <select class="form-select" name="select_curso" required>
+                      <option selected disabled value="">Escolher...</option>  
+
+                      <?php foreach($cursos as $curso): ?>
+                        <option value=" <?= $curso['ID'] ?>" > <?= $curso['DESC_CURSO'] ?> </option>
+                      <?php endforeach ?>
+                      
+                    </select>
+                  </div>
                 </div>
 
                 <br>
