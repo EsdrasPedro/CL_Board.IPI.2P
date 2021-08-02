@@ -23,7 +23,7 @@
     <link href="/Assets/Css/chartist.css" rel="stylesheet">
     <link href="/Assets/Css/chartist-plugin-tooltip.css" rel="stylesheet">
     <link href="/Assets/Css/gd.css" rel="stylesheet">
-    <title>CL Board</title>
+    <title>Agenda</title>
 
     <style>
         .bd-placeholder-img {

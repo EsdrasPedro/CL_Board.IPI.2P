@@ -18,7 +18,7 @@
     <meta name="author" content="Grupo CL Board">
     <link href="./Assets/Css/bootstrap.min.css" rel="stylesheet">
     <link href="./Assets/Css/cover.css" rel="stylesheet">
-    <title>CL Board</title>
+    <title>Agenda</title>
 
     <style>
         .bd-placeholder-img {
