@@ -193,39 +193,56 @@
                 <div class="col-12">
 
    
-                    <div class="card mb-3 mb-md-4">
-                        <div class="card-header border-bottom p-0">
-                            <ul id="wallets" class="nav nav-v2 nav-primary nav-justified d-block d-xl-flex w-100" role="tablist">
-                                <li class="nav-item border-bottom border-xl-bottom-0">
-                                    <a class="nav-link d-flex align-items-center py-2 px-3 p-xl-4 active" href="#bitcoin" role="tab" aria-selected="true"
-                                       data-toggle="tab">
-                                        <span></span>
-                                        <small class="text-muted ml-auto"></small>
-                                    </a>
-                                </li>
-                                <li class="nav-item border-bottom border-xl-bottom-0 border-xl-left">
-                                    <a class="nav-link d-flex align-items-center py-2 px-3 p-xl-4" href="#etherium" role="tab" aria-selected="false"
-                                       data-toggle="tab">
-                                        <span></span>
-                                        <small class="text-muted ml-auto"></small>
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="body">
+                    <link rel="stylesheet" href="./Assets/Css/calendar.css">
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <h1>
+                            Agosto
+                            <button>▾</button>
+                            </h1>
+                            <p>2021</p>
                         </div>
-
-                        <div id="walletsContent" class="card-body tab-content">
-                            <div class="tab-pane fade show active" id="bitcoin" role="tabpanel">
-
-                                <div class="js-area-chart chart chart--axis-x--nowrap chart--points-invisible position-relative mh-15_6 safari-overflow-hidden pt-4 pt-md-5 pb-1"></div>
-                            </div>
-
-                            <div class="tab-pane fade" id="bitcoinCash" role="tabpanel">
-
-                                <div class="js-area-chart chart chart--axis-x--nowrap chart--points-invisible position-relative mh-15_6 safari-overflow-hidden pt-4 pt-md-5 pb-1"
-                                     data-series=''></div>
-                            </div>
-
+                        <div class="calendar"><span class="day-name">Dom</span><span class="day-name">Seg</span><span class="day-name">Ter</span><span class="day-name">Qua</span><span class="day-name">Qui</span><span class="day-name">Sex</span><span class="day-name">Sab</span>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day">24</div>
+                            <div class="day">25</div>
+                            <div class="day">26</div>
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
+                            <div class="day day--disabled">1</div>
+                            <div class="day day--disabled">2</div>
+                            <div class="day day--disabled">3</div>
+                            <div class="day day--disabled">4</div>
+                            <section class="task task--primary">Reunião Marcada</section>
                         </div>
+                        </div>
+                        
                     </div>
 
                 </div>
