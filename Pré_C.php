@@ -1,3 +1,14 @@
+<?php
+
+    include './Auth/Connect.php';
+
+    if (!is_logged()) {
+        header('location: Login.php');
+        exit();
+    }
+
+?>
+
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -7,8 +18,8 @@
     <meta name="author" content="Grupo CL Board">
     <link href="./Assets/Css/bootstrap.min.css" rel="stylesheet">
     <link href="./Assets/Css/cover.css" rel="stylesheet">
-    <link href="./Assets/Css/chartist.css" rel="stylesheet">
-    <link href="./Assets/Css/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/Css/chartist.css">
+    <link rel="stylesheet" href="./Assets/Css/chartist-plugin-tooltip.css">
     <title>CL Board</title>
 
     <style>
@@ -60,16 +71,16 @@
 
                     <div class="col-md-6">
 
-                        <h5 class="mb-3 cc">Lista de Cursos</h5>
-                        <a class="side-nav-menu-link media align-items-center" href="Listar.php">
+                        <h5 class="mb-3 cc">Lista de Disciplinas</h5>
+                        <a class="side-nav-menu-link media align-items-center" href="ListaD.php">
                             <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100 ">Listar</button>
                         </a>
                     </div>
         
                     <div class="col-md-6">
     
-                        <h5 class="mb-3 cc">Cadastrar Curso</h5>
-                        <a class="side-nav-menu-link media align-items-center" href="CL_curso.php">
+                        <h5 class="mb-3 cc">Cadastrar Disciplina</h5>
+                        <a class="side-nav-menu-link media align-items-center" href="CL_disciplina.php">
                             <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100 ">Cadastrar</button>
                         </a>
                     </div>
