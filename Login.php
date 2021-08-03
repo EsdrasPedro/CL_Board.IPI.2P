@@ -54,7 +54,7 @@
     </div>
 
     <div class="mb-3 text-right">
-      <a href="Password-reset.html" class="small">Esqueceu a senha?</a>
+      <a href="Password-reset.php" class="small">Esqueceu a senha?</a>
     </div>
 
     <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
