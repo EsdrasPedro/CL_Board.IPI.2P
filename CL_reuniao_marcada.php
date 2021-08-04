@@ -7,7 +7,7 @@
         exit();
     }
 
-    $stmt = $pdo->query('SELECT * FROM CL_DISCIPLINA');
+    $stmt = $pdo->query('SELECT * FROM');
     $data = $stmt->fetchAll();
 ?>
 
@@ -88,12 +88,12 @@
                 </div>
 
                 <div class="col-md-12 form-group">
-                  <label class="col-form-label cc">Selecionar Disciplina</label>
+                  <label class="col-form-label cc">Selecionar Disciplina Ofertada</label>
                   <select class="form-select" name="select_disciplina" required>
                     <option selected disabled value="">Escolher...</option>  
 
                     <?php foreach ($data as $row ): ?>
-                      <option value=" <?= $row["ID"] ?>" > <?= $row["NOME"] ?> </option>
+                      <option value=" <?= $row['ID'] ?>" > <?= $row['NOME'] ?> </option>
                     <?php endforeach ?>
                     
                   </select>
