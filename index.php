@@ -196,10 +196,12 @@
                     <div class="body">
                     <link rel="stylesheet" href="./Assets/Css/calendar.css">
                     <div class="calendar-container">
+
                         <div class="calendar-header">
                             <h1>
+                            <button>◂</button>
                             Agosto
-                            <button>▾</button>
+                            <button>▸</button>
                             </h1>
                             <p>2021</p>
                         </div>
