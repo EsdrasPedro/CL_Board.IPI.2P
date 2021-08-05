@@ -72,7 +72,7 @@
                     <div class="col-md-6">
 
                         <h5 class="mb-3 cc">Lista de Disciplinas</h5>
-                        <a class="side-nav-menu-link media align-items-center" href="ListaD.php">
+                        <a class="side-nav-menu-link media align-items-center" href="Listar.php">
                             <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100 ">Listar</button>
                         </a>
                     </div>
@@ -80,7 +80,7 @@
                     <div class="col-md-6">
     
                         <h5 class="mb-3 cc">Cadastrar Disciplina</h5>
-                        <a class="side-nav-menu-link media align-items-center" href="CL_disciplina.php">
+                        <a class="side-nav-menu-link media align-items-center" href="CL_curso.php">
                             <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100 ">Cadastrar</button>
                         </a>
                     </div>
