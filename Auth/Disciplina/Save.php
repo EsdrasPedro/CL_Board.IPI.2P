@@ -8,6 +8,7 @@
 
     $stmt = $pdo->prepare("INSERT INTO CL_DISCIPLINA (CODIGO, NOME, CUR_ID) VALUES (?, ?, ?)");
     $stmt->execute([$nome2, $nome1, $cur]);
+    $id = $pdo->lastInsertId();
 
-    header('Location: /CL_disciplina_ofertada.php');
+    header('Location: /CL_disciplina_ofertada.php?dis_id=' . $id);
 ?>
