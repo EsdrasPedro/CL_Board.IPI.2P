@@ -67,6 +67,8 @@
             <div class="tab-pane fade show active">
               <form class="needs-validation" role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
 
+                <input type="hidden" name="dis_id" value=" <?= $_GET['dis_id'] ?> ">
+
                 <div class="row">
                   <div class="col-md-6 form-group">
                    <label class="col-form-label cc">Ano</label>
