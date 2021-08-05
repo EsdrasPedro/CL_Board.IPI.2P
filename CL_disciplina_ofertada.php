@@ -7,6 +7,9 @@
         exit();
     }
 
+    $stmt = $pdo->query('SELECT * FROM CL_DISCIPLINA');
+    $disciplinas = $stmt->fetchAll();
+
 ?>
 
 
@@ -67,8 +70,6 @@
             <div class="tab-pane fade show active">
               <form class="needs-validation" role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
 
-                <input type="hidden" name="dis_id" value=" <?= $_GET['dis_id'] ?> ">
-
                 <div class="row">
                   <div class="col-md-6 form-group">
                    <label class="col-form-label cc">Ano</label>
@@ -113,7 +114,23 @@
                   </datalist>
                   <div class="invalid-feedback">Por favor, selecione uma cor.</div>
                 </div>
+
               </div>
+
+              <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label class="col-form-label cc">Selecionar Disciplina</label>
+                    <select class="form-select" name="select_disciplina" required>
+                      <option selected disabled value="">Escolher...</option>  
+
+                      <?php foreach($disciplinas as $disciplina): ?>
+                        <option value=" <?= $disciplina['ID'] ?>" > <?= $disciplina['NOME'] ?> </option>
+                      <?php endforeach ?>
+                      
+                    </select>
+                  </div>
+                </div>
+
                 <br>
                 <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100">Confirmar</button>
               </form>
