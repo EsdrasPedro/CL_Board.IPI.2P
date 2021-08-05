@@ -7,7 +7,10 @@
         exit();
     }
 
-    $stmt = $pdo->query('SELECT * FROM');
+    $stmt = $pdo->query('SELECT CL_DISCIPLINA_OFERTADA.ID, CL_DISCIPLINA.NOME, CL_DISCIPLINA_OFERTADA.ANO, CL_DISCIPLINA_OFERTADA.SEMESTRE 
+                        FROM CL_DISCIPLINA_OFERTADA JOIN CL_DISCIPLINA 
+                        ON CL_DISCIPLINA.ID = CL_DISCIPLINA_OFERTADA.DIS_ID 
+                        GROUP BY CL_DISCIPLINA_OFERTADA.ID');
     $data = $stmt->fetchAll();
 ?>
 
@@ -93,7 +96,8 @@
                     <option selected disabled value="">Escolher...</option>  
 
                     <?php foreach ($data as $row ): ?>
-                      <option value=" <?= $row['ID'] ?>" > <?= $row['NOME'] ?> </option>
+                      <option value=" <?= $row['ID'] ?>" > <?= $row['NOME'] ?>  -  <?= $row['ANO'] ?>  -  <?= $row['SEMESTRE'] ?> 
+                      </option>
                     <?php endforeach ?>
                     
                   </select>
