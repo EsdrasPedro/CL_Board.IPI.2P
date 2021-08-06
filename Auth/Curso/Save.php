@@ -7,6 +7,6 @@
     $stmt = $pdo->prepare("INSERT INTO CL_CURSO (DESC_CURSO) VALUES (?)");
     $stmt->execute([$desc_]);
 
-    header('Location: /index.php');
+    header('Location: /Listar.php');
 
 ?>
