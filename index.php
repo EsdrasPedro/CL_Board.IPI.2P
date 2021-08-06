@@ -158,6 +158,9 @@
                         <a class="side-nav-menu-link" href="Pré_D.php">Disciplina</a>
                     </li>
                     <li class="side-nav-menu-item">
+                        <a class="side-nav-menu-link" href="ListaO.php">Disciplina Ofertada</a>
+                    </li>
+                    <li class="side-nav-menu-item">
                         <a class="side-nav-menu-link" href="CL_reuniao_marcada.php">Marcar Reunião</a>
                     </li>
                 </ul>
