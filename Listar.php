@@ -53,7 +53,7 @@
           color:grey
         }
         .task-delete {
-          display: flex;
+          margin-left: 10px;
         }
         .task-item {
           padding: 12px 20px;
@@ -70,12 +70,49 @@
         .task-item + .task-item {
           border-top: 1px solid #eef0f5;
         }
+
+        .task-item:hover {
+          background-color: #f6fbff;
+        }
         .task-list {
-          max-height: 30vh;
+          max-height: 23vh;
           overflow: auto;
         }
-        
-        
+        .task-tools {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: flex-start;
+        }
+        .task-filter {
+          border: 0;
+          padding: 4px 8px;
+          background: 0;
+          font-size: 14px;
+          line-height: 1;
+          cursor: pointer;
+          font-family: var(--font);
+          border-radius: 20px;
+          color: #fff;
+          background-color: #0d6efd;
+          border-color: #0d6efd
+        }
+        .task-item:hover > .task-delete {
+          display: block;
+        }
+        .app {
+          max-width: 470px;
+          width: 100%;
+          margin: auto;
+          background-color: #fff;
+          font-family: var(--font);
+          border-radius: 16px;
+          font-size: 15px;
+          overflow: hidden;
+          color: #455963;
+          box-shadow: 0 20px 80px rgba(0,0,0,.3);
+        }
+
     </style>
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark"> 
@@ -84,12 +121,30 @@
   <header class="mb-auto">
   </header>
 
-    <div class="row">
-      <div class="col-lg-5 mx-auto">
-        <div class="bg-white rounded-lg shadow-sm p-5">
+    <div class="app">
+
+        <div class="bg-white rounded-lg shadow-sm p-5 ">
 
           <div class="task-input">
-            <h4 class="mb-3 cc">Lista de Cursos</h4>
+
+            <div class="mb-5"></div>
+
+            <div class="position-relative">
+             <h4 class="mb-5 cc position-absolute top-10 start-0">Lista de Cursos</h4> 
+            </div>
+
+            <div class="task-tools">
+              <div class="task-count">
+              </div>
+              <div class="task-filters">
+                <a class="side-nav-menu-link media align-items-center" href="CL_curso.php">
+                  <button class="task-filter btn btn-primary">Cadastrar</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="mb-4"></div>
+            
           </div>
             
 
@@ -100,23 +155,21 @@
 
               
                 <?php foreach($cursos as $curso): ?>
-                  <p class="justify-content-between cc align-items-center d-flex unfold-item task-item"><?=  $curso['DESC_CURSO']  ?> 
+                  <div class="justify-content-between cc align-items-center d-flex unfold-item task-item"><?=  $curso['DESC_CURSO']  ?> 
                   
                   <a class="unfold-link align-items-center text-nowrap task-delete" href="./Auth/Curso/delete.php?ID=<?= $curso['ID'] ?>">
                   <span class="unfold-item-icon">
                         <i class="gd-close"></i>
                     </span></a>
                   
-                  </p>
+                </div>
                 <?php endforeach ?>
                   
-              
             </div>
             </div>
           </div>
   
         </div>
-      </div>
     </div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
