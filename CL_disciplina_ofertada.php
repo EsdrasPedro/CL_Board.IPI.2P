@@ -51,6 +51,18 @@
         .cd{
           color:grey
         }
+        .app {
+          max-width: 470px;
+          width: 100%;
+          margin: auto;
+          background-color: #fff;
+          font-family: var(--font);
+          border-radius: 16px;
+          font-size: 15px;
+          overflow: hidden;
+          color: #455963;
+          box-shadow: 0 20px 80px rgba(0,0,0,.3);
+        }
     </style>
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark"> 
@@ -61,8 +73,8 @@
     </div>
   </header>
 
-    <div class="row">
-      <div class="col-lg-5 mx-auto">
+    <div class="app">
+
         <div class="bg-white rounded-lg shadow-sm p-5">
             <h4 class="mb-3 cc">Cadastrar Disciplina</h4>
 
@@ -138,7 +150,7 @@
           </div>
   
         </div>
-      </div>
+
     </div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
