@@ -10,5 +10,5 @@
     $stmt->execute([$nome2, $nome1, $cur]);
     
 
-    header('Location: /ListaD.php);
+    header('Location: /ListaD.php');
 ?>
