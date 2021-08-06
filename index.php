@@ -152,7 +152,7 @@
 
                 <ul id="subPages" class="side-nav-menu side-nav-menu-second-level mb-0">
                     <li class="side-nav-menu-item">
-                        <a class="side-nav-menu-link" href="Pré_C.php">Curso</a>
+                        <a class="side-nav-menu-link" href="CL_curso.php">Curso</a>
                     </li>
                     <li class="side-nav-menu-item">
                         <a class="side-nav-menu-link" href="Pré_D.php">Disciplina</a>
