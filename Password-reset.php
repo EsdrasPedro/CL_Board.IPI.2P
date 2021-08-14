@@ -9,95 +9,40 @@
 
 ?>
 
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Grupo CL Board">
-    <link href="./Assets/Css/bootstrap.min.css" rel="stylesheet">
-    <link href="./Assets/Css/cover.css" rel="stylesheet">
-    <link rel="stylesheet" href="./Assets/Css/chartist.css">
-    <link rel="stylesheet" href="./Assets/Css/chartist-plugin-tooltip.css">
-    <title>CL Board</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Assets/Css/PageLogin.css" rel="stylesheet">
+    <title>Redefinir Senha</title>
+</head>
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
+<body>
+  <main class="main">
+      <div class="container">
+          <section class="wrapper">
+              <div class="heading">
+                  <h1 class="text text-large">Problemas para entrar?</h1>
+              </div>
+              <form class="form" action="./Auth/Login/auth.php" method="POST" novalidate>
+                  
+                <div class="input-control">
+                      <label class="input-label" hidden>Email</label>
+                      <input type="email" name="email" class="input-field" placeholder="Email" novalidate>
+                  </div>
+                  
+                  <div class="input-control">
+                    <div class="text-center mt-3 small">
+                      <a href="CL_usuário..html">Criar nova conta</a>
+                  </div>
+                    <input type="submit" class="input-submit" value="Enviar link">
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
-        }
-        body {
-            background: #f5f5f5;
-        }
-
-        .rounded-lg {
-            border-radius: 1rem;
-        }
-        .cc{
-            color: black;
-        }
-        .cd{
-          color:grey
-        }
-    </style>
-  </head>
-  <body class="d-flex h-100 text-center text-white bg-dark"> 
-<div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-  <header class="mb-auto">
-    <div>
-    </div>
-  </header>
-
-    <div class="row">
-      <div class="col-lg-5 mx-auto">
-        <div class="bg-white rounded-lg shadow-sm p-5">
-            <h4 class="mb-3 cc"></h4>
-
-          <div class="tab-content">
-            <div class="tab-pane fade show active">
-
-                <div class="row">
-
-                    <div class="col-md-6">
-
-                        <h5 class="mb-3 cc">Lista de Disciplinas</h5>
-                        <a class="side-nav-menu-link media align-items-center" href="ListaD.php">
-                            <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100 ">Listar</button>
-                        </a>
-                    </div>
-        
-                    <div class="col-md-6">
-    
-                        <h5 class="mb-3 cc">Cadastrar Disciplina</h5>
-                        <a class="side-nav-menu-link media align-items-center" href="CL_disciplina.php">
-                            <button type="submit" class="btn btn-primary btn-block rounded-pill shadow-sm w-100 ">Cadastrar</button>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-          </div>
-  
-        </div>
+                  </div>
+              </form>
+          </section>
       </div>
-    </div>
-
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-  </footer>
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-  </footer>
-</div>
-  </body>
+  </main>
+</body>
 </html>
