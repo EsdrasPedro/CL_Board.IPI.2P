@@ -10,6 +10,6 @@
     $stmt = $pdo->prepare("INSERT INTO CL_DISCIPLINA_OFERTADA (ANO, SEMESTRE, COR_DISC, DIS_ID, USU_ID_PROFESSOR) VALUES (?, ?, ?, ?, ?)");
     $stmt->execute([$ano, $semestre, $cor, $select_dis, $id]);
 
-    header('Location: /ListaO.php');
+    header('Location: /Listar_Disciplina_Ofertada.php');
 ?>
 

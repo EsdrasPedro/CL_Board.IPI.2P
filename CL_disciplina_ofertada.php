@@ -229,7 +229,9 @@
                 <p>Cadastrar Disciplina Ofertada</p>
             </div>
 
-            <form role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
+            <form class="needs-validation" role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
+           
+              <input type="hidden" name="dis_id" value=" <?= $_GET['dis_id'] ?> ">
 
             <div class="project-boxe"> 
                     <div class="message-content2">
@@ -285,7 +287,7 @@
                                   <option selected disabled value="">Escolher...</option>
 
                                     <?php foreach($disciplinas as $disciplina): ?>
-                                    <option value=" <?= $disciplina['ID'] ?>" > <?= $disciplina['NOME'] ?> </option>
+                                        <option value=" <?= $disciplina['ID'] ?>" > <?= $disciplina['NOME'] ?> </option>
                                     <?php endforeach ?>
 
                                 </select>

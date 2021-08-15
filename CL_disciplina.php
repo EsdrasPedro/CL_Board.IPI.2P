@@ -3,8 +3,8 @@
     include './Auth/Connect.php';
 
     if (!is_logged()) {
-      header('location: Login.php');
-      exit();
+        header('location: Login.php');
+        exit();
     }
     
     $stmt = $pdo->query('SELECT * FROM CL_CURSO');
@@ -199,14 +199,14 @@
                 <p>Cadastrar Disciplina</p>
             </div>
 
-            <form role="form" action="" method="POST" novalidate>
+            <form class="needs-validation" role="form" action="./Auth/Disciplina/Save.php" method="POST" novalidate>
 
             <div class="project-boxe"> 
                     <div class="message-content2">
                         <div>
                             <div class="message-header col-sm-6 d">
                                 <div class="form-label">Nome</div>
-                                <input type="text" class="input-field" name="fName" placeholder="Nome" required>  
+                                <input type="text" class="input-field" name="DitName" placeholder="Nome" required>  
                             </div>
 
             <div class="project-boxe"> 
