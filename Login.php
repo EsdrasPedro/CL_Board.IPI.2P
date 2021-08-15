@@ -19,7 +19,7 @@
             <section class="wrapper">
                 <div class="heading">
                     <h1 class="text text-large">Login</h1>
-                    <p class="text text-normal">Não tem uma conta? <span><a href="#" class="small text ">Cadastre-se</a></span>
+                    <p class="text text-normal">Não tem uma conta? <span><a href="CL_Usuario.php" class="small text ">Cadastre-se</a></span>
                     </p>
                 </div>
                 <form class="form" action="./Auth/Login/auth.php" method="POST" novalidate>

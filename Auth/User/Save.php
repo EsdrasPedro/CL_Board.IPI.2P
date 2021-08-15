@@ -13,7 +13,7 @@
     $senha2 = $_POST['password2'];
 
     if ($senha != $senha2) {
-        header('location: /CL_usuário.php');
+        header('location: /CL_Usuario.php');
         exit();
     }
 

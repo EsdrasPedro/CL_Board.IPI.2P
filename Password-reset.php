@@ -26,7 +26,7 @@
               <div class="heading">
                   <h1 class="text text-large">Problemas para entrar?</h1>
               </div>
-              <form class="form" action="./Auth/Login/auth.php" method="POST" novalidate>
+              <form class="form" action="#" method="POST" novalidate>
                   
                 <div class="input-control">
                     <label class="input-label" hidden>Nova Senha</label>
@@ -35,7 +35,7 @@
                   
                   <div class="input-control">
                     <div class="text-center mt-3 small">
-                      <a href="CL_usuário.html">Criar nova conta</a>
+                      <a href="CL_Usuario.php">Criar nova conta</a>
                   </div>
                     <input type="submit" class="input-submit" value="Enviar link">
 

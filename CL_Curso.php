@@ -1,5 +1,5 @@
 <?php
-    include 'Connect.php';
+    include './Auth/Connect.php';
 
     if (!is_logged()) {
       header('location: Login.php');
