@@ -1,5 +1,5 @@
 <?php
-    include 'Connect.php';
+    include './Auth/Connect.php';
 
     if (!is_logged()) {
       header('location: Login.php');
@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="PageIndex.css" rel="stylesheet">
+    <link href="./Assets/Css/PageIndex.css" rel="stylesheet">
     <script src="#"></script>
     <title>Novo</title>
 </head>
@@ -140,7 +140,11 @@
               <div>
               </div>
               <div>
-                <button class="task-filter" data-param="completed" data-value="false">Cadastrar</button>
+                <button class="task-filter" data-param="completed" data-value="false">
+                  <a href="CL_Curso.php" class="a1">
+                    Cadastrar
+                  </a>
+                </button>
               </div>
             </div>
 
