@@ -1001,6 +1001,29 @@ a:not([href]):not([tabindex]):focus{
   outline:0
 }
 
+.a1{
+  color:#fff;
+  background-color:transparent
+}
+
+.a1,.a1:hover{
+  text-decoration:none
+}
+
+.a1:hover{
+  color:#fff
+}
+
+.a1:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,
+.a1:not([href]):not([tabindex]):hover{
+  color:#fff;
+  text-decoration:none
+}
+
+.a1:not([href]):not([tabindex]):focus{
+  outline:0
+}
+
 .det{
   background-color: #e6eef9;
 }
