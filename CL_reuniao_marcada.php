@@ -209,31 +209,40 @@
                 <p>Marcar Chamada</p>
             </div>
 
-            <form role="form" action="" method="POST" novalidate>
+            <form role="form" action="./Auth/Reunião/save.php" method="POST" novalidate>
 
             <div class="project-boxe"> 
                     <div class="message-content2">
                         <div>
 
                             <div class="message-header col-sm-6 d">
-                                <div class="form-label"> Nome </div>
-                                <input type="text" class="input-field" name="fName" placeholder="Nome" required>  
+
+                                <div class="form-label">Nome</div>
+                                <input type="text" class="input-field" name="NameMateria" placeholder="Nome" required> 
+
                             </div>
 
                             <div class="message-header col-sm-3 d row1">
-                                <div class="form-label"> Data </div>
-                                <input type="date" class="input-field" name="fName" placeholder="Nome" required>  
+
+                                <div class="form-label">Data</div>
+                                <input type="date" class="input-field" name="DataReuniao" required>  
+                            
                             </div>
 
                             <div class="row1">
+
                                 <div class="col-sm-3 esp">  
+                               
                                     <div class="form-label">Horário de Início</div>
                                     <input type="time" name="Date_Ini" class="input-field" required> 
+                               
                                 </div>
 
-                                <div class="col-sm-3">  
+                                <div class="col-sm-3">
+
                                     <div class="form-label">Horário de Fim</div>
-                                    <input type="time" name="Date_Ini" class="input-field" required>  
+                                    <input type="time" name="Date_Fim" class="input-field" required>  
+                               
                                 </div>
 
                             </div>
@@ -263,7 +272,7 @@
                   </div>
             </div>
 
-          </FORM>
+          </form>
 
           </div>
 
