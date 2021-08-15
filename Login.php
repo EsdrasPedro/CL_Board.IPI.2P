@@ -25,14 +25,14 @@
                 <form class="form" action="./Auth/Login/auth.php" method="POST" novalidate>
                     <div class="input-control">
                         <label class="input-label" hidden>Email</label>
-                        <input type="email" name="email" class="input-field" placeholder="Email" novalidate>
+                        <input type="email" name="email" class="input-field" placeholder="Email" required>
                     </div>
                     <div class="input-control">
                         <label class="input-label" hidden>Senha</label>
-                        <input type="password" name="pw" class="input-field" placeholder="Senha" novalidate>
+                        <input type="password" name="pw" class="input-field" placeholder="Senha" required>
                     </div>
                     <div class="input-control">
-                        <a href="#" class="small text">Esqueceu a senha?</a>
+                        <a href="Password-reset.php" class="small text">Esqueceu a senha?</a>
                         <input type="submit" class="input-submit" value="Entrar">
                     </div>
                 </form>

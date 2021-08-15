@@ -12,7 +12,7 @@
 
     if (sizeof($data) == 0) {
         
-        header('location: /index.php');
+        header('location: /Agenda.php');
         exit();
 
     }
@@ -22,6 +22,6 @@
     $_SESSION['E_MAIL'] = $cl_usuario['E_MAIL'];
     $_SESSION['NOME'] = $cl_usuario['NOME'];
 
-    header('location: /index.php');
+    header('location: /Agenda.php');
 
 ?>

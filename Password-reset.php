@@ -29,13 +29,13 @@
               <form class="form" action="./Auth/Login/auth.php" method="POST" novalidate>
                   
                 <div class="input-control">
-                      <label class="input-label" hidden>Email</label>
-                      <input type="email" name="email" class="input-field" placeholder="Email" novalidate>
+                    <label class="input-label" hidden>Nova Senha</label>
+                    <input type="password" name="pw" class="input-field" placeholder="Senha" required>
                   </div>
                   
                   <div class="input-control">
                     <div class="text-center mt-3 small">
-                      <a href="CL_usuário..html">Criar nova conta</a>
+                      <a href="CL_usuário.html">Criar nova conta</a>
                   </div>
                     <input type="submit" class="input-submit" value="Enviar link">
 
