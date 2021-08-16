@@ -6,5 +6,5 @@
     $det = $pdo->prepare("delete from CL_DISCIPLINA_OFERTADA where ID = ?");
     $det->execute( [$ID] );
 
-    header('Location: /');
+    header('Location: /Listar_Disciplina_Ofertada.php');
 ?>
