@@ -93,7 +93,7 @@
         <div class="projects-section">
           <div class="linha">
             <h1 class="pp">Outubro</h1>
-	          <h2 class="pp">2021</h2>
+            <h2 class="pp">2021</h2>
           </div>
 
             <div class="calendar">
@@ -106,9 +106,8 @@
               <div class="days">Sunday</div>
               <div class="day not-work">31</div>
               <div class="day project-market">1
-              <div class="hover-title">Marketing</div>
-              <div class="project-detail">Sales report from last month</div>
-              <div class="project-detail">Prepare offers for clients</div>
+              <div class="hover-title">POO</div>
+              <div class="project-detail">Aula 3</div>
               <div class="popup-check">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
                 </svg>
@@ -128,8 +127,8 @@
               <div class="day">13</div>
               <div class="day">14</div>
               <div class="day project-market">15
-              <div class="hover-title">Marketing</div>
-              <div class="project-detail">Write an article about design trends</div>
+              <div class="hover-title">WEB 1</div>
+              <div class="project-detail">Introdução a PHP</div>
               <div class="popup-check">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
                 </svg>
@@ -137,9 +136,8 @@
               </div>
               <div class="day">16</div>
               <div class="day project-market">17
-              <div class="hover-title">Marketing</div>
-              <div class="project-detail">Create AdWords campaign</div>
-              <div class="project-detail">Send newsletter to clients</div>
+              <div class="hover-title">PEP 1</div>
+              <div class="project-detail">Aula síncrona número 5</div>
               <div class="popup-check">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
                 </svg>
@@ -151,8 +149,8 @@
               <div class="day">21</div>
               <div class="day">22</div>
               <div class="day project-finance">23
-                <div class="hover-title">Management</div>
-              <div class="project-detail finance">Redesign project ui interface for clients and get feedback</div>
+                <div class="hover-title">BD</div>
+              <div class="project-detail finance">Aula síncrona</div>
               <div class="popup-check">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-square"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
                 </svg>
