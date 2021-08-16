@@ -232,9 +232,8 @@
                 <p>Cadastrar Disciplina Ofertada</p>
             </div>
 
-            <form class="needs-validation" role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
+            <form role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
            
-              <input type="hidden" name="dis_id" value=" <?= $_GET['dis_id'] ?> ">
 
             <div class="project-boxe"> 
 
