@@ -159,7 +159,7 @@
               <div class="message-box">
                 <div class="message-content">
                   <div class="message-header">
-                    <div> <?=  $discO['NOME']  ?> | <?=  $discO['DATA']  ?> | <?=  $discO['H_INICIO']  ?>  à  <?=  $discO['H_FIM']  ?></div>
+                    <div> <?=  $discO['NOME']  ?> | <?=  $discO['D_DATA']  ?> | <?=  $discO['H_INICIO']  ?>  à  <?=  $discO['H_FIM']  ?></div>
                     <div class="star-checkbox">
                       <label class="star-1">
                         <a class="btn-logout" href="./Auth/Reunião/delete.php?ID=<?= $discO['ID'] ?>">
