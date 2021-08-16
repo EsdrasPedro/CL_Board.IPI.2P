@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="CL_U.css" rel="stylesheet">
+    <link href="./Assets/Css/CL_U.css" rel="stylesheet">
     <title>Criar Conta CL Board</title>
 </head>
 <body class="bg-light">

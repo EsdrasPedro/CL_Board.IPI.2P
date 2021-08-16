@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="PageIndex.css" rel="stylesheet">
+    <link href="./Assets/Css/PageIndex.css" rel="stylesheet">
     <script src="#"></script>
     <style>
 
@@ -163,7 +163,7 @@
                 <p>Cadastrar Curso</p>
             </div>
 
-            <form role="form" action="./Auth/Ofertado/Save.php" method="POST" novalidate>
+            <form role="form" action="./Auth/Curso/Save.php" method="POST" novalidate>
 
             <div class="project-boxe">
 
