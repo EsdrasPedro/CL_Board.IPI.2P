@@ -5,6 +5,7 @@
 }
 
 :root {
+  --light-font: #1f1c2e;
   --app-container: #f3f6fd;
   --main-color: #1f1c2e;
   --secondary-color: #4A4A4A;
@@ -525,7 +526,7 @@ button, a {
 .star-checkbox label {
   width: 24px;
   height: 24px;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   cursor: pointer;

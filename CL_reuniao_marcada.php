@@ -234,7 +234,7 @@
                                 <div class="col-sm-3 esp">  
                                
                                     <div class="form-label">Horário de Início</div>
-                                    <input type="time" name="Date_Ini" class="input-field1" required> 
+                                    <input type="time" name="Date_Ini" class="input-field" required> 
                                
                                 </div>
 
